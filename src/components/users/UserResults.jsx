@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import Spinner from '../layout/Spinner'
 
 function UserResults() {
 
@@ -28,10 +29,12 @@ function UserResults() {
               {users.map((user) => (
                 <h3>{user.login}</h3>
               ))}
+              
             </div>
+            
           )
     }else{
-        return <h3>Loading...</h3>
+        return <Spinner/>
 
     }
 
