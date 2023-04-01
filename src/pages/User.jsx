@@ -28,7 +28,7 @@ function User() {
       getUserData()
       getUserReposData()
        
-    }, [])
+    }, [dispatch, params.login])
 
     const {
         name,
