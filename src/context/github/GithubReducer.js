@@ -30,6 +30,13 @@ switch(action.type){
             repos : action.payload,
             loading : false,
         }
+    case 'GET_USER_AN_REPOS':
+        return {
+            ...state, 
+            user : action.payload.user,
+            repos: action.payload.repos,
+            loading : false,
+        }
     default: 
         return state
 }
